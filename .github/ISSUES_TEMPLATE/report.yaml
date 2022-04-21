@@ -1,0 +1,26 @@
+name: Report
+description: Report Article
+title: "[Article]: "
+labels: ["article"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for report
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: Article url | 文章链接
+      placeholder: ex. https://example/article.html
+    validations:
+      required: true
+  - type: textarea
+    id: desc
+    attributes:
+      label: Desc
+      description: Recommended reason | 推荐理由
+      placeholder: Tell us what your reason
+    validations:
+      required: true
+
